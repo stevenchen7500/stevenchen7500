@@ -15,14 +15,19 @@
   </script>
 
   
-  <title>归档 | Hexo</title>
+  <title>blog的创建流程 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="https://github.com/stevenchen7500/archives/index.html">
+  <meta name="description" content="hexo的使用1.本地创建和浏览器预览hexo init &#x2F;&#x2F;创建空的hexo文件 hexo g &#x2F;&#x2F;创立静态文件加.gitdeploy hexo s &#x2F;&#x2F;本地服务器可访问 &#x2F;&#x2F;成功了就说明没问题了 2.上传到github修改配置文件_config.yml(hexo下面的，不是主题下面的)修改#site# Site title: Hexo subtitle: &#39;&#39; descript">
+<meta property="og:type" content="article">
+<meta property="og:title" content="blog的创建流程">
+<meta property="og:url" content="https://github.com/stevenchen7500/2020/10/07/blog%E7%9A%84%E5%88%9B%E5%BB%BA%E6%B5%81%E7%A8%8B/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="hexo的使用1.本地创建和浏览器预览hexo init &#x2F;&#x2F;创建空的hexo文件 hexo g &#x2F;&#x2F;创立静态文件加.gitdeploy hexo s &#x2F;&#x2F;本地服务器可访问 &#x2F;&#x2F;成功了就说明没问题了 2.上传到github修改配置文件_config.yml(hexo下面的，不是主题下面的)修改#site# Site title: Hexo subtitle: &#39;&#39; descript">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-10-07T11:36:04.000Z">
+<meta property="article:modified_time" content="2020-10-07T11:57:51.462Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="blog">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -101,168 +106,124 @@
 
   <div id="main-wrap" class="position-relative" style="margin-top: 55px;">
       <div class="main-inner-content">
-          <style>
-    .post-hover:hover {
-        box-shadow: inset 0 0 100px #000;
-        transition: box-shadow .2s;
-    }
+          <!--博文页面-->
 
-    .sub-post-container .post-hover:hover h3 {
-        text-decoration: underline gray;
-    }
-
-
-    .primary-item-main {
-        height: 330px;
+<style>
+    .header-box {
+        height: 370px;
+        filter: blur(10px);
         background-size: cover;
+        background-color: lightsteelblue;
     }
 
-    .primary-container .title,
-    .primary-container .sub-title,
-    .primary-container .post-content-text,
-    .primary-container .date {
-        color: #fff;
+    .post-box {
+        padding: 15px;
+        padding-top: 60px;
+        min-height: 80vh;
+        margin-top: -200px;
+        border-radius: 4px;
+        background-color: rgba(255,255,255,.8);
     }
 
-    .post-content-text {
-        color: #f1f1f1!important;
+    .post-avatar {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
     }
 
-    .primary-container .post-hover {
-        background: black;
+    .flow-chart {
+        text-align: center;
     }
 
-    .content-bg-mask {
-        background: rgba(0,0,0,.4);
+    img[alt="post-cover"] {
+        display: none;
     }
-
 </style>
-
-<div style="background: #f5f8f9;">
-    <div id="main-container" class="container" style="padding-top: 20px;">
-        <div class="is-flex main-content justify-center">
-            <section class="column is-9">
-                
-<div class="primary-container content-box is-flex-desktop clear-padding bottom-line" style="margin-bottom: 25px;">
-    <div class="column  is-7-desktop">
-        <a href="/stevenchen7500/2020/10/07/blog的创建流程/">
-            <div class="full-height post-hover"
-                 style="
-                         background-image: url('');
-                         height: 350px;
-                         background-size: cover;
-                         background-repeat: no-repeat;
-                         ">
-                    <div class=" is-flex flex-column center content has-text-centered full-height has-padding content-bg-mask">
-                        <h1 class="title text-shadow" style="margin-bottom: 15px;">
-                            blog的创建流程
-                        </h1>
-                        <div>
-                        
-                            `
-                                <span class="tag is-post-tag">blog</span>
-                            
-                        
-                        </div>
-                        <p class="post-content-text is-marginless has-padding text-shadow">
-                            hexo的使用1.本地创建和浏览器预览hexo init //创建空的hexo文件
+<header>
+    <div id="header_box" class="header-box"></div>
+</header>
+<section>
+    <div class="container post-box">
+        <div class="content post-title is-flex center flex-column" style="margin-bottom: 70px; overflow: auto;">
+            <h1 class="has-text-centered" style="padding-bottom: 10px; border-bottom: 3px solid #fff">
+                <strong>blog的创建流程</strong>
+            </h1>
+            
+            <div class="is-flex align-center">
+                <img class="post-avatar" src="https://lh3.googleusercontent.com/proxy/8VQOopPIunQ2_9nLLzLXN_EUUf_yXYfLekf0xDIiruKnhZixKayQjVkgS93ptC7sKQk-z2S_7wWQnrt6dj_w0yuxv39OuMUpMOsjInT21VqgSYzScAY">
+                <span style="padding:0 10px;"> <span class="sub-title">By</span> stevenchen7500</span>
+                <span class="post-date sub-title">at: 2020-10-07</span>
+            </div>
+            
+                <div>
+                    
+                         <a class="tag is-post-tag" href="/stevenchen7500/tags/blog/">blog</a>
+                    
+                </div>
+            
+        </div>
+        <div class="content" style="overflow: auto">
+            <h1 id="hexo的使用"><a href="#hexo的使用" class="headerlink" title="hexo的使用"></a>hexo的使用</h1><h2 id="1-本地创建和浏览器预览"><a href="#1-本地创建和浏览器预览" class="headerlink" title="1.本地创建和浏览器预览"></a>1.本地创建和浏览器预览</h2><pre><code>hexo init //创建空的hexo文件
 hexo g //创立静态文件加.gitdeploy
 hexo s //本地服务器可访问
-//成功了就说明没问题了
-2.上传到github修改配置文件_..
-                        </p>
-                        <p class="date text-shadow">2020-10-07</p>
-                        <button class="button is-info is-small">Read More</button>
-                    </div>
-            </div>
-        </a>
-    </div>
-    <div class="column is-5 is-hidden-touch" style="padding-left: 0;">
-        <div class="full-height is-flex flex-column justify-space-between" style="min-height: 350px;">
-            
-                
-<a class="post-hover" href="/stevenchen7500/2020/10/07/first-blog/" style="height: 48.5%">
-    <div class="content is-hidden-touch full-height overflow-hidden" style="background-image: url('')">
-        <div class="content-bg-mask full-width full-height has-padding">
-            <h3 class="title is-marginless text-shadow">
-                first blog
-            </h3>
-            
-            
-            
-            <p class="sub-title text-shadow"></p>
-            <p class="is-marginless text-shadow post-content-text">
-                
-            </p>
-            <p class="date text-shadow is-marginless">2020-10-07</p>
-        </div>
-    </div>
-</a>
-            
-            
-        </div>
-    </div>
-    <div class="column is-12 is-hidden-desktop">
-        
-        
-<a class="post-hover" href="/stevenchen7500/2020/10/07/first-blog/" style="height: 48.5%">
-    <div class="content is-hidden-touch full-height overflow-hidden" style="background-image: url('')">
-        <div class="content-bg-mask full-width full-height has-padding">
-            <h3 class="title is-marginless text-shadow">
-                first blog
-            </h3>
-            
-            
-            
-            <p class="sub-title text-shadow"></p>
-            <p class="is-marginless text-shadow post-content-text">
-                
-            </p>
-            <p class="date text-shadow is-marginless">2020-10-07</p>
-        </div>
-    </div>
-</a>
-        
-        
-    </div>
-</div>
+//成功了就说明没问题了</code></pre>
+<h2 id="2-上传到github"><a href="#2-上传到github" class="headerlink" title="2.上传到github"></a>2.上传到github</h2><h3 id="修改配置文件-config-yml-hexo下面的，不是主题下面的"><a href="#修改配置文件-config-yml-hexo下面的，不是主题下面的" class="headerlink" title="修改配置文件_config.yml(hexo下面的，不是主题下面的)"></a>修改配置文件_config.yml(hexo下面的，不是主题下面的)</h3><h3 id="修改-site"><a href="#修改-site" class="headerlink" title="修改#site"></a>修改#site</h3><pre><code># Site
+title: Hexo
+subtitle: &#39;&#39;
+description: &#39;&#39;
+keywords:
+author: John Doe
+language: zh-CN
+timezone: &#39;&#39;</code></pre>
+<h3 id="修改url下面的url和root"><a href="#修改url下面的url和root" class="headerlink" title="修改url下面的url和root"></a>修改url下面的url和root</h3><pre><code>url: https://github.com/stevenchen7500
+root: /stevenchen7500</code></pre>
+<h3 id="修改主题theme"><a href="#修改主题theme" class="headerlink" title="修改主题theme"></a>修改主题theme</h3><pre><code>theme: claudia
+</code></pre>
+<h3 id="配置主题-按说明来就可以了"><a href="#配置主题-按说明来就可以了" class="headerlink" title="配置主题 按说明来就可以了"></a>配置主题 按说明来就可以了</h3><pre><code>我参考的主题：
+https://github.com/Haojen/hexo-theme-Claudia</code></pre>
+<p>注意点 </p>
+<pre><code>hexo new page &quot;about&quot; //生成新的页面 具体看主题里面的layout文件</code></pre>
+<h3 id="修改deploy"><a href="#修改deploy" class="headerlink" title="修改deploy"></a>修改deploy</h3><pre><code>deploy:
+  type: &#39;git&#39;
+  repo: git@github.com:stevenchen7500/stevenchen7500.git
+  branch: master</code></pre>
+<h3 id="尝试本地生成"><a href="#尝试本地生成" class="headerlink" title="尝试本地生成"></a>尝试本地生成</h3><pre><code>hexo clean //清除本地的index
+hexo g //生成本地的index
+hexo s //浏览器本地预览
+hexo d //若以上都没有问题执行将index上传到github</code></pre>
+<h3 id="写文章"><a href="#写文章" class="headerlink" title="写文章"></a>写文章</h3><pre><code>hexo new &quot;我的博客&quot;</code></pre>
+<p>开头配置</p>
+<pre><code>title: blog的创建流程
+date: 2020-10-07 19:36:04
+tags: blog
+Categories: tech</code></pre>
+<p>预览链接<br><a><a target="_blank" rel="noopener" href="https://stevenchen7500.github.io/stevenchen7500/">https://stevenchen7500.github.io/stevenchen7500/</a></a></p>
 
-                    
-                    
-                
-                    
-                        <div class="content-box  is-hidden-desktop" style="margin-bottom: 27px;">
-                            <a class="post-hover" href="/stevenchen7500/2020/10/07/first-blog/">
-                            <div class="columns" style="min-height: 230px;">
-                                
-                                <div class="column is-8-desktop post-content is-flex align-center">
-                                    <div class="content">
-                                        <h3>first blog</h3>
-                                        
-                                        <p>
-                                            
-                                        </p>
-                                        <p>
-                                            
-                                        </p>
-                                        <p>2020-10-07</p>
-                                        <button class="button is-small">Read More</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        </div>
-                    
-                
-                <!--翻頁-->
-                <nav class="pagination is-flex" style="justify-content: flex-end">
-                    
-                </nav>
-            </section>
+        </div>
+        <div class="post-reply">
+            
             
         </div>
     </div>
-</div>
+</section>
+<script>
+    // 获取第一张图, 用以当封面背景图
+    var img = document.querySelectorAll('img')[1]
+
+    if (img) {
+        var header_box = document.querySelector('#header_box')
+        header_box.style.backgroundImage = 'url('+ img.src +')'
+    }
+</script>
+
+<!-- for code block highlight --> 
+<!-- theme.block_highlight -->
+<!-- we do not guarantee the char sequences spell right, usr himself do it -->
+
+<link rel="stylesheet" href="/stevenchen7500/css/highlight_rainbow.css">
+
+<script src="/js/highlight.min.js"></script>
+<script type="text/javascript"> hljs.initHighlightingOnLoad();</script>
 
       </div>
   </div>
